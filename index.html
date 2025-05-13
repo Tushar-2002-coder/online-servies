@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Govt Services & Results Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #b6df21;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #4d84d7;
+      color: rgb(14, 14, 15);
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #0a0b05;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav button {
+      background: #c3dfea;
+      color: rgb(15, 15, 14);
+      border: none;
+      padding: 12px 20px;
+      margin: 10px;
+      cursor: pointer;
+      font-size: 100%;
+      font-weight: bold;
+    }
+    nav button:hover {
+      background: #ed1111;
+    }
+    .section {
+      display: none;
+      padding: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: rgb(232, 233, 226);
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(200, 75, 75, 0.1);
+      text-align: center;
+    }
+    .card:hover {
+      background: #32d3f0;
+    }
+    .card a {
+      text-decoration: none;
+      color: #220505;
+      font-weight: bold;
+      font-size: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>All Government Services & Exam Results</h1>
+</header>
+
+<nav>
+  <button onclick="showSection('services')">Government Services</button>
+  <button onclick="showSection('jobs')">Government jobs</button>
+  <button onclick="showSection('results')">Board Results</button>
+  <button onclick="showSection('competitive-results')">Competitive Exams</button>
+</nav>
+
+<div class="section active" id="services">
+  <h2>Government Services</h2>
+  <div class="grid">
+    <div class="card"><a href="https://uidai.gov.in/" target="_blank">Aadhaar Card</a></div>
+    <div class="card"><a href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html" target="_blank">PAN Card</a></div>
+    <div class="card"><a href="https://voters.eci.gov.in/" target="_blank">Voter ID</a></div>
+    <div class="card"><a href="https://eshram.gov.in/" target="_blank">e-Shram Card</a></div>
+    <div class="card"><a href="https://parivahan.gov.in/" target="_blank">Driving License</a></div>
+    <div class="card"><a href="https://passportindia.gov.in/" target="_blank">Passport</a></div>
+    <div class="card"><a href="https://nfsa.gov.in/" target="_blank">Ration Card</a></div>
+    <div class="card"><a href="https://scholarships.gov.in/" target="_blank">Scholarship Portal</a></div>
+  </div>
+</div>
+
+<div class="section active" id="jobs">
+  <h2>Government Jobs Links</h2>
+  <div class="grid">
+    <div class="card"><a href="https://www.drdo.gov.in/careers" target="_blank">DRDO Jobs</a></div>
+    <div class="card"><a href="https://ofb.gov.in/" target="_blank">Ordnance Factory Recruitment</a></div>
+    <div class="card"><a href="https://www.rrbcdg.gov.in/" target="_blank">Railway Recruitment</a></div>
+    <div class="card"><a href="https://www.isro.gov.in/Careers.html" target="_blank">ISRO Careers</a></div>
+    <div class="card"><a href="https://npcilcareers.co.in/" target="_blank">NPCIL - Chemical Jobs</a></div>
+    <div class="card"><a href="https://www.ntpc.co.in/en/careers" target="_blank">NTPC - Electrical Jobs</a></div>
+    <div class="card"><a href="https://www.bhel.com/careers" target="_blank">BHEL Careers</a></div>
+    <div class="card"><a href="https://www.gailonline.com/" target="_blank">GAIL India</a></div>
+    <div class="card"><a href="https://www.sailcareers.com/" target="_blank">SAIL Recruitment</a></div>
+  </div>
+</div>
+
+<div class="section" id="results">
+  <h2>🎓 Direct Result Links</h2>
+  <div class="grid">
+    <div class="card"><a href="https://results.cbse.nic.in/" target="_blank">CBSE Results</a></div>
+    <div class="card"><a href="https://upresults.nic.in/" target="_blank">UP Board Results</a></div>
+    <div class="card"><a href="https://biharboardonline.bihar.gov.in/" target="_blank">Bihar Board Results</a></div>
+    <div class="card"><a href="https://orissaresults.nic.in/" target="_blank">Odisha Board Results</a></div>
+    <div class="card"><a href="https://mahresult.nic.in/" target="_blank">Maharashtra Board Results</a></div>
+    <div class="card"><a href="https://rajresults.nic.in/" target="_blank">Rajasthan Board Results</a></div>
+    <div class="card"><a href="https://cgbse.nic.in/" target="_blank">Chhattisgarh Board Results</a></div>
+    <div class="card"><a href="https://jacresults.com/" target="_blank">Jharkhand Board Results</a></div>
+    <div class="card"><a href="https://karresults.nic.in/" target="_blank">Karnataka Board Results</a></div>
+    <div class="card"><a href="https://keralaresults.nic.in/" target="_blank">Kerala Board Results</a></div>
+    <div class="card"><a href="https://mpresults.nic.in/" target="_blank">MP Board Results</a></div>
+    <div class="card"><a href="https://tnresults.nic.in/" target="_blank">Tamil Nadu Board Results</a></div>
+    <div class="card"><a href="https://tsbie.cgg.gov.in/" target="_blank">Telangana Board Results</a></div>
+    <div class="card"><a href="https://cisce.org/" target="_blank">CISCE Results</a></div>
+    <div class="card"><a href="https://resultsassam.nic.in/" target="_blank">Assam Board Results</a></div>
+    <div class="card"><a href="https://www.bse.ap.gov.in/" target="_blank">AP Board Results</a></div>
+    <div class="card"><a href="https://www.gseb.org/" target="_blank">Gujarat Board Results</a></div>
+    <div class="card"><a href="https://hpbose.org/" target="_blank">HP Board Results</a></div>
+    <div class="card"><a href="https://bseh.org.in/" target="_blank">Haryana Board Results</a></div>
+    <div class="card"><a href="https://jkbose.nic.in/" target="_blank">J&K Board Results</a></div>
+    <div class="card"><a href="https://manresults.nic.in/" target="_blank">Manipur Board Results</a></div>
+    <div class="card"><a href="https://megresults.nic.in/" target="_blank">Meghalaya Board Results</a></div>
+    <div class="card"><a href="https://mbse.edu.in/" target="_blank">Mizoram Board Results</a></div>
+    <div class="card"><a href="https://nbsenl.edu.in/" target="_blank">Nagaland Board Results</a></div>
+    <div class="card"><a href="https://pseb.ac.in/" target="_blank">Punjab Board Results</a></div>
+    <div class="card"><a href="https://tripuraresults.nic.in/" target="_blank">Tripura Board Results</a></div>
+    <div class="card"><a href="https://uaresults.nic.in/" target="_blank">Uttarakhand Board Results</a></div>
+    <div class="card"><a href="https://wbresults.nic.in/" target="_blank">West Bengal Board Results</a></div>
+    <div class="card"><a href="https://results.nios.ac.in/" target="_blank">NIOS Results</a></div>
+    <div class="card"><a href="https://www.ignou.ac.in/" target="_blank">IGNOU Results</a></div>
+    <div class="card"><a href="https://makautexam.net/" target="_blank">MAKAUT Results</a></div>
+    <div class="card"><a href="https://osmania.ac.in/" target="_blank">Osmania University Results</a></div>
+    <div class="card"><a href="https://result.uniraj.ac.in/" target="_blank">Rajasthan University Results</a></div>
+    <div class="card"><a href="https://tripurauniv.ac.in/result/university-results" target="_blank">Tripura University Results</a></div>
+    <div class="card"><a href="https://www.bdu.ac.in/examinations/results/" target="_blank">Bharathidasan University Results</a></div>
+    <div class="card"><a href="https://www.coeju.com/results-ug.html" target="_blank">University of Jammu Results</a></div>
+    <div class="card"><a href="https://results.puexam.in/" target="_blank">Punjab University Results</a></div>
+  </div>
+</div>
+
+<div class="section" id="competitive-results">
+  <h2>🎓 Competitive & Technical Exam Results</h2>
+  <div class="grid">
+    <div class="card"><a href="https://ncvtmis.gov.in/" target="_blank">ITI Results (NCVT)</a></div>
+    <div class="card"><a href="https://sctevtodisha.nic.in/" target="_blank">Diploma Results (SCTE&VT Odisha)</a></div>
+    <div class="card"><a href="https://jeemain.nta.nic.in/" target="_blank">JEE Main Results</a></div>
+    <div class="card"><a href="https://neet.nta.nic.in/" target="_blank">NEET UG Results</a></div>
+    <div class="card"><a href="https://tripurauniv.ac.in/result/university-results" target="_blank">B.Tech (Tripura University)</a></div>
+    <div class="card"><a href="https://www.exam.dtu.ac.in/result.htm" target="_blank">B.Tech (DTU)</a></div>
+    <div class="card"><a href="https://www.himtu.ac.in/results/" target="_blank">B.Tech (HIMTU)</a></div>
+    <div class="card"><a href="https://result.uniraj.ac.in/" target="_blank">B.Tech (Rajasthan Univ.)</a></div>
+  </div>
+</div>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    document.getElementById(id).style.display = 'block';
+  }
+
+  // Show default section
+  showSection('services');
+</script>
+
+</body>
+</html>
